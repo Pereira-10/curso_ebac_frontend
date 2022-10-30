@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 2px;
+    padding: 0;
+}
+
+h1 {
+    font-size: 45px;
+    padding: 16px;
+    }
+
+body > header {
+    background-color: #2f3640;
+    padding: 0 /*topo e parte inferior*/ 0 /*nas laterais*/;
+    color: #f5f6fa;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header li { /*Quero os links um do lado do outro. No meu header tem nav, ul, li*/
+    display: inline; /*configura a forma que o elemento será exibido. Inline um do lado do outro - não fica com aparencia de lista. Block - Ele fica em blocos. None: não exibo esses elementos. */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px; /*Para dar espaçamento entre esporte e economia - que estão na parte superior direita da tela*/
+}
+
+header li a {
+    color: #f5f6fa;
+    text-decoration: none;
+}
+.container {
+    width: 1366px; /*Largura de um notebook padrão hd*/
+    margin: 0 auto 0 60px; /*Vai estar centralizado na horizontal - Para isso usamos a propriedade margin. Ordem: topo, direita, embaixo, esquerda. Posso abreviar 0 auto 0 auto PARA 0 auto.*/
+    
+}
+
+.articles {
+    display: flex; /*Flexbox nos auxilia na construção de layouts*/
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img {
+  /*height: 180px;*/   /*a altura máxima das imagens será de 180px*/
+  width: 100%; /*Largura da imagem vai ser de 100%*/
+}
+
+.articles article {
+    width: 30%;
+}
+/*Se eu quero 3 notícias por linha, eu terei que ter no máximo em uma divisão 100% (que é a minha largura total) dividido por 3 ítens, dá 33,3% */
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.articles article {
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.articles article a {
+    background-color: blue;
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+}
+
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+/*Vamos customizar a sessão de esportes*/
+#sports {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+#sports .articles article a {
+    background-color: #009432;
+}
+
+#sports article img {
+    height: 300px;
+}
+
+#economy {
+    background-color: #f8f59f;
+}
+
+#economy .articles article a {
+background-color: #ff9f1a;
+}
+
+#economy article img {
+    height: 300px;
+}
+
+#tech {
+    background-color: rgba(164, 239, 245, 0.719);
+}
+
+#tech .articles article a {
+    background-color: #045964;
+  }
+
+#tech article img {
+    height: 300px;
+}
+
+#entertainment {
+    background-color: rgba(248, 183, 237, 0.719);
+}
+
+#entertainment .articles article a {
+    background-color: #770447;
+    
+}
+
+#entertainment article img {
+    height: 300px; 
+}
+
+footer {
+    background-color: #2f3640;
+    color: #f5f6fa;
+    padding: 16px;
+    font-size: 20px;
+    text-align: center;
+}
