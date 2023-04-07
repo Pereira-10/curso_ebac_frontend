@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: carter one, cursive;
+}
+
+header {
+  padding-bottom: 20px;
+  max-width: 96%;
+}
+
+body {
+  padding-top: 50px;
+  text-align: center;
+  background-color: rgb(150, 149, 252);
+}
+
+form input {
+  padding: 5px;
+  width: 15%;
+  font-family: Anuphan, sans-serif;
+  text-align: left;
+}
+
+form button {
+  padding: 8px;
+  font-weight: bold;
+  border: none;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-family: Anuphan, sans-serif;
+}
+
+#lista-de-tarefas {
+  border: 1.5px solid rgb(161, 145, 255);
+  list-style-type: none;
+  
+  
+  }
