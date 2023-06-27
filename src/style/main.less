@@ -1,10 +1,9 @@
 @fontePrincipal: Montserrat, sans-serif;
 @fonteDoTitulo: Lobster Two, cursive;
 @corDoTexto: #f6f6f6;
-@corDeFundo: #eb3b5a;
+@corDeFundo: #04094e;
 @buttonBackgroundColor: #f7b731;
 @buttonColor: #010101;
-
 
 body {
     background-color: @corDeFundo;
@@ -14,7 +13,10 @@ body {
 
 h1 {
     font-family: @fonteDoTitulo;
-    font-size: 3em;
+    font-size: 2.8em;
+    margin: 0 auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 main {
@@ -29,29 +31,33 @@ button {
     padding: 16px;
     cursor: pointer;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 16px;
     margin-top: 16px;
-    border-radius: 8px;
+    border-radius: 16px;
     background-color: @buttonBackgroundColor;
     color: @buttonColor;
     font-family: @fontePrincipal;
 }
 
+label {
+    font-size: 32px;
+    }
+
 input {
     display: block;
-    margin: 16px auto 0;
-    font-size: 2em;
-    max-width: 120px;
+    margin: 8px auto 0;
+    font-size: 1.2em;
+    max-width: 100px;
     border: none;
     background-color: transparent;
     text-align: center;
     color:@corDoTexto;
-    border-bottom: 6px solid @corDoTexto;
+    border-bottom: 4px solid @corDoTexto;
 }
 
 .resultado {
-    padding: 16px;
-    margin-top: 120px;
+    padding: 8px;
+    margin-top: 30px;
     border: 8px dotted @corDoTexto;
     display: none;
 
